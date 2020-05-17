@@ -1,6 +1,6 @@
 import * as React from 'react';
-import NavBarComponent from '../components/NavBar/navBar.component';
-import AppBarWrapperComponent from '../components/AppBarWrapper/appBarWrapper.component';
+import NavBarComponent from '../NavBar/navBar.component';
+import AppBarWrapperComponent from '../AppBarWrapper/appBarWrapper.component';
 
 const NavigatorComponent:React.FC = ()=>{
   const [open, setOpen] = React.useState(false);
