@@ -1,10 +1,10 @@
-import * as React from "react";
-import Toolbar from "@material-ui/core/Toolbar";
-import IconButton from "@material-ui/core/IconButton";
-import Typography from "@material-ui/core/Typography";
-import MenuIcon from "@material-ui/icons/Menu";
-import { useStyles } from "./style";
-import clsx from "clsx";
+import * as React from 'react';
+import Toolbar from '@material-ui/core/Toolbar';
+import IconButton from '@material-ui/core/IconButton';
+import Typography from '@material-ui/core/Typography';
+import MenuIcon from '@material-ui/icons/Menu';
+import { useStyles } from './style';
+import clsx from 'clsx';
 
 interface Props {
   handleDrawerOpen: () => void;

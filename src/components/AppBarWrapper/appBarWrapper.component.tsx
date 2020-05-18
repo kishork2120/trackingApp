@@ -1,8 +1,8 @@
-import * as React from "react";
-import clsx from "clsx";
-import AppBar from "@material-ui/core/AppBar";
-import { useStyles } from "./style";
-import ToolBarComponent from "../ToolBar/toolBar.component";
+import * as React from 'react';
+import clsx from 'clsx';
+import AppBar from '@material-ui/core/AppBar';
+import { useStyles } from './style';
+import ToolBarComponent from '../ToolBar/toolBar.component';
 
 interface Props {
   handleDrawerOpen: () => void;
@@ -19,7 +19,10 @@ const AppBarWrapperComponent: React.FC<Props> = (props: Props) => {
         [classes.appBarShift]: props.open,
       })}
     >
-      <ToolBarComponent handleDrawerOpen={props.handleDrawerOpen} open={props.open} />
+      <ToolBarComponent
+        handleDrawerOpen={props.handleDrawerOpen}
+        open={props.open}
+      />
     </AppBar>
   );
 };

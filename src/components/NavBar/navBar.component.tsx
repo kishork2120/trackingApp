@@ -1,18 +1,18 @@
-import * as React from "react";
-import ListItem from "@material-ui/core/ListItem";
-import ListItemIcon from "@material-ui/core/ListItemIcon";
-import ListItemText from "@material-ui/core/ListItemText";
-import Drawer from "@material-ui/core/Drawer";
-import Divider from "@material-ui/core/Divider";
-import IconButton from "@material-ui/core/IconButton";
-import List from "@material-ui/core/List";
-import InboxIcon from "@material-ui/icons/MoveToInbox";
-import MailIcon from "@material-ui/icons/Mail";
-import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
-import ChevronRightIcon from "@material-ui/icons/ChevronRight";
-import { useTheme } from "@material-ui/core/styles";
-import { useStyles } from "./style";
-import clsx from "clsx";
+import * as React from 'react';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemIcon from '@material-ui/core/ListItemIcon';
+import ListItemText from '@material-ui/core/ListItemText';
+import Drawer from '@material-ui/core/Drawer';
+import Divider from '@material-ui/core/Divider';
+import IconButton from '@material-ui/core/IconButton';
+import List from '@material-ui/core/List';
+import InboxIcon from '@material-ui/icons/MoveToInbox';
+import MailIcon from '@material-ui/icons/Mail';
+import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
+import ChevronRightIcon from '@material-ui/icons/ChevronRight';
+import { useTheme } from '@material-ui/core/styles';
+import { useStyles } from './style';
+import clsx from 'clsx';
 
 interface Props {
   handleDrawerClose: () => void;
@@ -39,7 +39,7 @@ const NavBarComponent: React.FC<Props> = (props: Props) => {
     >
       <div className={classes.toolbar}>
         <IconButton onClick={props.handleDrawerClose}>
-          {theme.direction === "rtl" ? (
+          {theme.direction === 'rtl' ? (
             <ChevronRightIcon />
           ) : (
             <ChevronLeftIcon />
@@ -48,7 +48,7 @@ const NavBarComponent: React.FC<Props> = (props: Props) => {
       </div>
       <Divider />
       <List>
-        {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
+        {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
           <ListItem button key={text}>
             <ListItemIcon>
               {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
@@ -59,7 +59,7 @@ const NavBarComponent: React.FC<Props> = (props: Props) => {
       </List>
       <Divider />
       <List>
-        {["All mail", "Trash", "Spam"].map((text, index) => (
+        {['All mail', 'Trash', 'Spam'].map((text, index) => (
           <ListItem button key={text}>
             <ListItemIcon>
               {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}

@@ -1,10 +1,12 @@
 import { makeStyles } from '@material-ui/core/styles';
 
 export const useStyles = makeStyles((theme) => ({
-  menuButton: {
-    marginRight: 36,
+  content: {
+    flexGrow: 1,
+    height: '100vh',
+    overflow: 'auto',
   },
-  hide: {
-    display: 'none',
+  appBarSpacer: {
+    marginTop: '4%',
   },
 }));
